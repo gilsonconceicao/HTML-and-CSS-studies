@@ -1,0 +1,104 @@
+@charset "UTF-8"; 
+
+body {
+    background-color: #401F0D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article > h1 {
+    color: purple;
+}
+article > h2, h3 {
+    color: rgba(102, 51, 153, 0.631);
+}
+header {
+    background-color: #554532;
+    height: 108px;
+    margin: 0px 10px 0px 10px;
+}
+
+#header-text {
+    float: right;
+    position: absolute;
+    right: 30px;
+}
+
+#header-imagem {
+    float: left;
+    position: absolute;
+    left: 30px;
+}
+
+#header-logo {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+
+#table {
+    display: table;
+    border-spacing: 10px;
+}
+
+#table-linha {
+    display: table-row;
+}
+
+#assunto-1 {
+    display: table-cell;
+    background-color: white;
+    font-size: 105%;
+    padding: 15px;
+    margin: 10px 10px 0px 10px;
+    vertical-align: top;
+}
+
+#assunto-2 {
+    display: table-cell;
+    background-color: white;
+    font-size: 105%;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    vertical-align: top;
+}
+
+#destaque {
+    display: table-cell;
+    background-color: white;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    vertical-align: top;
+}
+#destaque:hover {
+    background-color: rgba(137, 43, 226, 0.563);
+    color: white;
+}
+#destaque:hover > h1{
+    color: white;
+}
+
+#destaque > h1 {
+    text-align: center;
+}
+
+#destaque > p {
+    text-align: justify;
+}
+
+a {
+    color: #5c008a;
+    text-decoration: none;
+}
+a:visited { color: #5c008ace;}
+
+a:hover {
+    color: rgb(167, 0, 167);
+    text-decoration: underline black;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 10px 10px 10px;
+}

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+body {
+    background-image: linear-gradient(to top, #9d4728,  #74341d);
+}
+/* cabeçaçho da pagina */ 
+header {
+    background-color: #593527; 
+    color: white;
+    padding: 5px;
+    margin: -8px -8px 0px -8px;
+}
+header:hover {
+    background-color: #6b4232;
+}
+header > h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+header > p {
+    text-align: center;
+    font-size: 1.4em;
+    margin: -15px 0 5px 0;
+}
+section {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    margin: 0 -8px 0 -8px;
+}
+section > p > a {
+    background-color: rgba(158, 150, 150, 0.392);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 3px;
+}
+section > p > a:hover {
+    color: #3c6bd1; 
+    padding: 10px;
+}
+section > p {
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+/* corpo da pagina */
+/*-------------------*/ 
+/* pagina parte 01 */ 
+#parte-01 {
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+}
+article > h2 {
+    text-align: center;
+}
+/* pagina parte 02 */
+#parte-02 {
+    background-color: white;
+    padding: 15px;
+    margin: -18px 20px 0 20px;
+}
+
+/*-------------------------
+     parte de destaques
+---------------------------*/ 
+#destaques {
+    display: table;
+    border-spacing: 10px;
+    margin: auto;
+}
+#laterais {
+    display: table-row;
+}
+.destaque-1 {
+    display: table-cell;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 15px;
+    margin: 0 0 0 0;
+}
+.destaque-1:hover {
+    background-color: cadetblue;
+}
+/*imagens da pagina */ 
+#imagem-persistencia {
+    float: right;
+    margin: -50px 20px 0 10px;
+}
+
+#imagem-ambicao {
+    float: right;
+     margin: -50px 20px 0 10px;
+}
+
+#imagem-responsa {
+    float: right;
+     margin: -50px 20px 0 10px;
+}
+
+#garota-pc {
+    float: right;
+    margin: -50px 20px 0 10px;
+}
+/* ambas as paginas */ 
+article > h2, h3 {
+    font-family: 'Baloo 2', cursive;
+}
+article > p {
+    text-align: justify;
+    font-size: 105%;
+    line-height: 150%;
+}
+
+/* rodapé */ 
+footer {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    margin: -16px -8px -16px -8px;
+}
+footer > p {
+    text-align: center;
+    font-size: 90%;
+    margin: 0;
+}
+
+/* media screen */ 
+@media only screen and (max-width: 600px) {
+    header {
+        padding-bottom: 30px;
+    }
+    nav > ul {
+        display: none;
+        background-color: white;
+        color: black;
+        padding: 8px 0 8px 0;
+        border-radius: 8px;
+    }
+    #sobre {
+        display: none;
+        background-image: linear-gradient(to bottom, #138f59, #1668c0a8);
+        color: white;
+        border-top: 3px solid black;
+        padding: 5px;
+    }
+    article {
+        background-color: white;
+        color: black;
+
+
+    }
+  }
+  

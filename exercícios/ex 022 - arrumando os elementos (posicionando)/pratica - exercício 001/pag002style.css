@@ -1,0 +1,140 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: linear-gradient(to left, #701a8ccb, #2563d8); 
+}
+
+/*----------cabeçalho---------- */ 
+
+#logo {
+    float: right; 
+    margin-top: -124px ;
+    margin-right: 10px;
+}
+
+header {
+    background-image: linear-gradient(to left, #6e0c8fcb, #133d8c); 
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: -16px -8px 0 -8px;
+}
+header > h1 {
+    color: orangered;
+    font-size: 2.5em;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    margin: 24px 0 -26px 0;
+}
+header > p {
+    text-align: center;
+    font-size: 1.3em;
+}
+/*--------corpo da pagina------*/ 
+
+article {
+    background-color: white;
+    padding: 15px;
+    margin: auto 10px auto 10px;
+}
+article > p {
+    line-height: 150%;
+}
+article > h2 {
+    color: orangered;
+    font-size: 1.8em;
+    font-family: 'Baloo 2', cursive;
+    padding: 0 0 0 3px;
+}
+article > h3 {
+    color: orangered;
+    font-family: 'Baloo 2', cursive;
+    padding: 0 0 0 3px;
+}
+/* links da pagina */ 
+a:link {
+    color: #4a2ad8;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(162, 7, 201);
+}
+a:active {
+    color: purple;
+}
+a:visited {
+    color: rgba(128, 0, 128, 0.7);
+}
+/*destaque*/ 
+#destaque {
+    display: table;
+    border-spacing: 18px;
+}
+#divisao {
+    display: table-row;
+}
+#tecnologia {
+    display: table-cell;
+    border: thin solid black ;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+#tecnologia > h3 {
+    color: #2563d8;
+}
+#tecnologia:hover {
+    background-color: paleturquoise;
+    color: black;
+}
+#inovacao {
+    display: table-cell;
+    border: thin solid black ;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+#inovacao > h3 {
+    color: #2563d8;
+}
+#inovacao:hover {
+    background-color: paleturquoise;
+    color: black;
+}
+
+/* áreas para trabalhar */ 
+#areas {
+    background-color: #372b2b;
+    color: aliceblue;
+    padding: 15px;
+}
+#areas > h3 {
+    background-color: rgb(80, 112, 192);
+    color: #ffffff;
+    padding: 4px 0 4px 9px;
+    margin: -15px -15px 0px -15px;
+}
+/* imagens //// vídeo */ 
+#imagem-garoto {
+    float: right;
+    margin-top: -50px;
+}
+#video {
+    background-color: rgb(228, 225, 225);
+    padding: 10px;
+    margin: 0 -15px -7px -15px;
+    text-align: center;
+}
+/* rodapé */ 
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0px -8px -8px -8px;
+}
+footer > p {
+    text-align: center;
+    font-size: 90%;
+    margin: 0px;
+}
