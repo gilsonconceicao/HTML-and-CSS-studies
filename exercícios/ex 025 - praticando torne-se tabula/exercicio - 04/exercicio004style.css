@@ -1,0 +1,92 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+/* ESTILO DO MENU */ 
+
+#menu {
+    background-color: #292e2e;
+    margin: -8px -8px 0 -8px;
+}
+#menu > ul {
+    max-width: 450px;
+    margin: auto;
+    background-color: #292e2e;
+    padding: 0px;
+    list-style: none;
+}
+#menu > ul > li {
+    display: inline;
+}
+#menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: background .4s;
+    display: inline-block;
+    padding: 20px;
+}
+#menu > ul > li > a:hover {
+    background-color: steelblue;
+}
+
+/* ESTILO DA TABELA */ 
+
+table {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+th, td {
+    border: 1px dotted rgb(0, 0, 0);
+    padding: 10px;
+}
+
+td:hover {
+    background-color: rgba(0, 0, 255, 0.295);
+}
+
+th:hover {
+    background-color: rgba(223, 22, 22, 0.329);
+}
+
+td {
+    text-align: center;
+}
+
+#melhores {
+    color: black;
+}
+
+#titulotable > th {
+    background-color: rgba(32, 28, 32, 0.753);
+    color: white;
+}
+
+.destaque-table {
+    background-color: rgba(5, 189, 112, 0.877);
+}
+
+/* ESTILO DO CORPO DA PAGINA */ 
+div#table {
+    display: table;
+    border-spacing: 20px;
+}
+div#tablerow {
+    display: table-row;
+}
+
+section#conteudo {
+    display: table-cell;
+    background-color: #292e2e;
+    color: white;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.089);
+}
+section#tabela {
+    display: table-cell;
+}

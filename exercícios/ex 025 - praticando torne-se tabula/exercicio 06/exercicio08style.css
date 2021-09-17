@@ -1,0 +1,83 @@
+@charset "UTF-8"; 
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* corpo da pagina */ 
+#corpo-pag {
+    padding: 10px;
+}
+/* menu e tabela da pagina */ 
+#menu {
+    background-color: #1b1717;
+    margin: -8px -8px 0 -8px;
+}
+#menu > ul {
+    max-width: 800px;
+    margin: auto;
+    background-color: #1b1717;
+    padding: 0;
+    list-style-type: none;
+}
+#menu > ul > li {
+    display: inline;
+}
+#menu > ul > li > a{
+    color: white;
+    text-decoration: none;
+    transition: background .5s;
+    display: inline-block;
+    padding: 15px;
+}
+#menu > ul > li > a:hover {
+    background-color: seagreen;
+}
+#menu > ul > li#ultimo-list  a{
+    background-color: seagreen;
+    float: right;
+}
+#menu > ul > li#ultimo-list a:hover {
+    background-color: rgba(46, 139, 86, 0.452);
+}
+table {
+    background-image: linear-gradient(to left, #000000, green, #000000);
+    color: white;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td {
+    border: thin dotted rgb(0, 0, 0)   ;
+    padding: 10px;
+}
+td {
+    text-align: center;
+}
+td:hover {
+    background-color: steelblue;
+}
+th:hover {
+    background-color: rgb(252, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+    table {
+        background-image: linear-gradient(to left, #000000, green, #000000);
+        color: white;
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: auto;
+    }
+    th, td {
+        border: thin dotted rgb(0, 0, 0)   ;
+        padding: 3px;
+    }
+    td {
+        text-align: center;
+    }
+    td:hover {
+        background-color: steelblue;
+    }
+    th:hover {
+        background-color: rgb(252, 0, 0);
+    }
+}

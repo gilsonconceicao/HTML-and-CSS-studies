@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Como fazer tabelas em HTML ? -->
+    <main>
+        <header>
+            <h1>Como fazer tabelas? </h1>
+        </header>
+        <section id="tabela-tonico">
+            <article>
+                <table> <!---a teg <table> marca a área da tabela \ou/ onde será ela. -->
+                    <caption>
+                        Essa tabela é dos dados do tonico
+                    </caption>
+                    <tr><!---A teg <tr> mostra quantas linhas formará-->
+
+                        <th>City</th><!-- A teg <th> é onde será adicionado seus títulos-->
+                        <th>Date</th>
+                        <th>Temperature</th>
+                        <th>Altitude</th>
+                        <th>Population</th>
+                        <th>Diner Rating </th>
+                    </tr>
+                    <tr>
+                        <td>Walla Walla</td> <!--A teg <td> é onde será a celula, o conteúdo dela-->
+                        <td>June 15th</td>
+                        <td>75</td>
+                        <td>1,204 ft</td>
+                        <td>29,682</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Magic City, ID</td>
+                        <td>June 25th</td>
+                        <td>74</td>
+                        <td>5,312 ft</td>
+                        <td>50</td>
+                        <td>3/5</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

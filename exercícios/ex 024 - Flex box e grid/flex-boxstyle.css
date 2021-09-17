@@ -1,0 +1,55 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1em;
+    font-family: Arial;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+.header {
+    background-color: rgb(29, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.menu > ul {
+    background-color: rgb(29, 23, 23);
+}
+
+.menu > ul > li{
+    display: inline;
+}
+.menu > ul > li > a{
+    display: inline-block;
+    padding: 15px;
+}
+.menu > ul > li > a:hover {
+    background-color: #4ab97c;
+}
+
+/* CSS Flex-box 01*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto; 
+}
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+

@@ -1,0 +1,57 @@
+@charset "UTF-8"; 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+    background-color: black;
+    margin: -8px -8px 0 -8px;
+}
+#menu > ul {
+    max-width: 900px;
+
+    list-style-type: none;
+    margin: auto;
+}
+#menu > ul > li {
+    display: inline;
+}
+
+#menu > ul > li > a {
+    display: inline-block;
+    padding: 20px;
+    transition: background .7s;
+    color: white;
+    text-decoration: none;
+}
+
+#menu > ul > li > a:hover {
+    background-color: #F2A413;
+}
+#ultimo-list {
+    float: right;
+    background-color: #F2A413;
+}
+#menu > ul > li#ultimo-list > a:hover {
+    background-color: #ce8c11d7;
+}
+
+#destaque {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 10px 10px 10px;
+}
+#divisao {
+    flex: 1 1 200px;
+    background-color: rgba(33, 25, 33, 0.755);
+    border-top: 2px solid white;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#divisao:hover {
+    background-color: rgba(33, 25, 33, 0.864);
+}
+body {
+    background-image: url(imagens/imagem\ de\ fundo.jpg);
+}

@@ -1,0 +1,80 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    font-family: 'Noto Sans', sans-serif; 
+}
+
+/* menu e cabeçalho da pagina */ 
+#menu {
+    background-color: #25282b; 
+    margin: -8px -8px 0 -8px; 
+}
+#menu > ul {
+    max-width: 400px;
+    background-color: #25282b;
+    list-style: none;
+    padding: 0px;
+    margin: auto;
+}
+#menu > ul > li {
+    display: inline;
+}
+
+#menu > ul > li > a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background .4s;
+    display: inline-block;
+    padding: 15px;
+}
+#menu > ul > li > a:hover {
+    background-color: rgb(12, 108, 235);
+}
+/* tabela da pagina */ 
+table {
+    background-color: white;
+    border: 3px double black;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    caption-side: bottom;
+}
+th {
+    background-color: turquoise;
+    color: black;
+}
+th, td {
+    border: 1px dotted black;
+    padding: 10px; 
+}
+.none-center {
+    text-align: left;
+}
+td {
+    text-align: center;
+}
+.cellcolor > td{
+    background-color: rgba(21, 135, 211, 0.664);
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        background-color: white;
+        border: 3px double black;
+        border-collapse: collapse;
+        border-spacing: 10px;
+        caption-side: top;
+    }
+    
+    th, td {
+        border: 1px dotted black;
+        padding: 3px; 
+    }
+    .none-center {
+        text-align: left;
+    }
+    td {
+        text-align: center;
+    }
+  }

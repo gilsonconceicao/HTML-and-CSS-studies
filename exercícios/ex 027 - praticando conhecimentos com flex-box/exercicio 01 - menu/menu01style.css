@@ -1,0 +1,29 @@
+@charset "UTF-8"; 
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu {
+    margin: 0;
+}
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+}
+.menu > ul > li > a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+.menu > ul > li > a:hover {
+    background-color: rgb(17, 70, 184);
+}
