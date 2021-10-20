@@ -1,0 +1,106 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+
+
+* {
+    font-family: 'Open Sans', sans-serif;;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/*cabeçalho da pagina */ 
+#cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+#menu > ul  {
+    display: flex;
+    list-style-type: none;
+    padding-right: 20px;
+}
+#menu > ul > li > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+}
+#menu > ul > li > a:hover {
+    color: #162c4d;
+    text-decoration: underline;
+    opacity: 0.7px;
+}
+#logo {
+    padding-left: 20px;
+}
+/* grid da pagina 1 */ 
+body {
+    background-image: linear-gradient(to left, #673AB7, #512DA8);
+    color: white;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.texto {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding: 10px;
+}
+.texto > p {
+    text-align: justify;
+    
+}
+.titulo-lobo > h2 {
+    font-family: 'Overlock', cursive;
+    font-size: 1.7em;
+    color: white;
+}
+.titulo-lobo {
+    font-size: 2.3em;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    #cabeclho {
+        border-bottom: 1px dotted black;
+    }
+    .grid1 > img {
+        display: grid;
+        
+    }
+    .texto {
+        margin-top: -50px;
+    }
+    #menu > ul {
+        background-color: black;
+        border-radius: 20px 0;
+        padding: 7px;
+        margin: 0 -8px 0 -8px;
+    }
+    #logo {
+        padding-left: 5px;  
+    }
+    #menu > ul > li > a {
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+    }
+    #menu > ul > li > a:hover {
+        text-decoration: none;
+        background-color: #ffffff;
+        border-radius: 20px 0;
+        color: white;
+    }
+}

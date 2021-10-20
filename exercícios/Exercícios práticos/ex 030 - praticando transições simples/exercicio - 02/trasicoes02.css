@@ -1,0 +1,363 @@
+@charset "UTF-8"; 
+* {
+    font-family: Arial, Helvetica, sans-serif   ;
+}
+/* cabeçlho com o titulo e trasition */ 
+header {
+    background-color: dodgerblue;
+    padding: 4px;
+    display: flex;
+    flex-wrap:wrap;
+    text-shadow: 3px 3px 3px rgba(49, 44, 44, 0.46);
+    justify-content: space-between;
+    align-items: center;
+    margin: -8px -8px 0 -8px;
+}
+header > h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-right: 30px;
+}
+#logo {
+    background-image: linear-gradient(to top, black, rgb(0, 255, 0));
+    border-radius: 150%;
+    transition: .8s;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+#logo:hover {
+    background-image: linear-gradient(to top, black, rgb(255, 0, 255));
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+/* >>>>>>>>>>>>>>>>> diplay table da pagina ><<<<<<<<<<<*/ 
+div.table {
+    display: table;
+}
+div.tablerow {
+    display: table-row;
+}
+/*>>>>>>>>>>>>>>>>> estilo aside - barra lateral<<<<<<<<<<< */ 
+aside {
+    display: table-cell;
+    max-width: 500px;
+    border-right: 2px solid black;
+    padding: 10px;
+}
+.style-art::first-letter {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.style-art::first-line {
+    font-style: italic;
+}
+aside > article > h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+/* >>>>>>>>>>>>>>>>> estilo section - parte principal <<<<<<<<<*/ 
+section {
+    display: table-cell;
+    padding: 10px;
+}
+article {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+}
+article > p {
+    text-align: justify;
+}   
+article#destaque > h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: 2px underline black;
+    font-size: 2.5em;
+    color: rgb(13, 46, 79);
+}
+article#destaque > p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>> efeitos com degradê <<<<<<<<<<<<<<<<<<*/ 
+.degrade-transition {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10px;
+   margin: auto;
+}
+.degrade {
+    background-image: linear-gradient(to left, blue, purple);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    margin: auto;
+    border-radius: 100%;
+    transition: .8s;
+
+}
+.degrade:hover {
+    background-image: linear-gradient(to left, #0051ff, #00e990);
+
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+/*>>>>>>>>>>>>>>>> efeitos com do menor para o maior <<<<<<<<<<<<<<<<<<*/ 
+
+div.menor {
+    background-color: rgb(3, 183, 214);
+    box-shadow: 4px 4px 4px #2c2727dc;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 40px auto; 
+    transition: .9s;
+
+}
+div.menor:hover {
+    background-image: linear-gradient(to left, #00ff9d, #bf0b7d);
+    width: 300px;
+    height: 300px;
+
+}
+
+/*>>>>>>>>>>>>>>>> transição de lateral left para right <<<<<<<<<<<<<<<<<<*/ 
+
+.lateral {
+    background-color: purple;
+    width: 100px;
+    height: 100px;  
+    transition: .8s;
+    float: right;
+    margin-bottom: 50px;
+}
+.lateral:hover {
+    background-image: linear-gradient(to left, purple, rgb(255, 2, 2));
+
+    height: 20px;
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+/* >>>>>>>>>>>>>> transições em círculos <<<<<<<<<<*/ 
+.trasition-circle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.circle {
+    background-image: linear-gradient(to left, #001868, #01abb1);
+    width: 100px;
+    height: 100px;
+    transition: .8s;
+
+}
+.circle:hover {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+/* >>>>>>>>>>>>>> transições em quadrado <<<<<<<<<<*/ 
+.transition-squadre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3px;
+}
+.squadre {
+    background-image: linear-gradient(to top, purple, aqua);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: .8s;
+}
+.squadre:hover {
+    background-image: linear-gradient(to top, purple, aqua);
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+}
+.ocutar > h1 { display: block;}
+
+/* >>>>>>>--- responsividade da pagina ---<<<<<<<<<<<*/ 
+
+@media (max-width: 900px) {
+    /* >>>>>>>>>>>>>>>>> diplay table da pagina ><<<<<<<<<<<*/ 
+    div.table {
+        display: block;
+    }
+    div.tablerow {
+        display: block;
+    }
+    aside {
+        display: block;
+        max-width: 100%;
+        border-right: none;
+    }
+    .ocutar:hover > article {
+        display: block;
+    }
+    .ocutar > article {
+        display: none;
+    }
+    section {
+        display: block;
+    }
+}
+
+@media (max-width: 360px) {
+    article {
+        padding: 1px;
+    }
+    aside {
+        padding: 1px;
+    }
+    .ocutar > h1 { display: block;}
+
+    section {
+        padding: 5px;
+    }
+    header {
+        background-color: rgb(34, 39, 43);
+        padding: 4px;
+        display: flex;
+        flex-wrap:wrap;
+        text-shadow: 3px 3px 3px rgba(49, 44, 44, 0.46);
+        justify-content: space-between;
+        align-items: center;
+        margin: -8px -8px 0 -8px;
+    }
+    header > h1 {
+        color: dodgerblue; 
+        padding-right: 20px;
+    }
+    #logo {
+        background-image: linear-gradient(to top, black, rgb(0, 255, 0));
+        
+        margin-left: 15px;
+    }
+    #logo:hover {
+        background-image: linear-gradient(to top, black, rgb(255, 0, 255));
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+    .degrade {
+        background-image: linear-gradient(to left, blue, purple);
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        border-radius: 100%;
+        transition: .8s;
+    
+    }
+}
+@media (max-width: 320px) {
+   
+    header {
+        background-color: rgb(34, 39, 43);
+        padding: 4px;
+        display: flex;
+        flex-wrap:wrap;
+        text-shadow: 3px 3px 3px rgba(49, 44, 44, 0.46);
+        justify-content: space-between;
+        align-items: center;
+        margin: -8px -8px 0 -8px;
+    }
+    header > h1 {
+        color: dodgerblue; 
+        padding-right: 15px;
+        font-size: 1.7em;
+    }
+    #logo {
+        background-image: linear-gradient(to top, black, rgb(0, 255, 0));
+        
+        margin-left: 10px;
+    }
+    #logo:hover {
+        background-image: linear-gradient(to top, black, rgb(255, 0, 255));
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+    .degrade {
+        background-image: linear-gradient(to left, blue, purple);
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        border-radius: 100%;
+        transition: .8s;
+    
+    }
+}
+
+@media (max-width: 280px) {
+      header {
+        background-color: rgb(34, 39, 43);
+        padding: 4px;
+        display: flex;
+        flex-wrap:wrap;
+        text-shadow: 3px 3px 3px rgba(49, 44, 44, 0.46);
+        justify-content: space-between;
+        align-items: center;
+        margin: -8px -8px 0 -8px;
+    }
+    header > h1 {
+        color: dodgerblue; 
+        padding-right: 20px;
+        font-size: 1.5em;
+    }
+    #logo {
+        background-image: linear-gradient(to top, black, rgb(0, 255, 0));
+        border-radius: 150%;
+        transition: .8s;
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+    #logo:hover {
+        background-image: linear-gradient(to top, black, rgb(255, 0, 255));
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+    .degrade {
+        background-image: linear-gradient(to left, blue, purple);
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+        border-radius: 100%;
+        transition: .8s;
+    }
+    .squadre {
+        background-image: linear-gradient(to top, purple, aqua);
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        transition: .8s;
+    }
+    div.menor:hover {
+        width: 150px;
+        height: 150px;    
+    }
+}

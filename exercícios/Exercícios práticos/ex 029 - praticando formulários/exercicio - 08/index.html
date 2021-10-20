@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 08</title>
+    <link rel="stylesheet" href="formulario08.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div id="logo"> 
+                <h1>Logo da pagina</h1>
+            </div>
+        </header>
+
+        <section>
+            <div class="box">
+                <form action="">
+                    <fieldset>
+                        <div class="titulo-form">
+                            <h2>Login Netshoes</h2>
+                        </div>
+                        <!---nome e sobrenome da pessoa-->
+                        <div class="input-box">
+                            <label for="nome">Nome: </label> <br>
+                            <input type="text" name="nome" class="input-user">
+                        </div>
+                        <br>
+                        <div class="input-box">
+                            <label for="sobrenome">Sobrenome: </label> <br>
+                            <input type="text" name="sobrenome" class="input-user">
+                        </div>
+                        <br>
+                        <!--selecione o seu genero-->
+                        <label for="genero">Selecione o seu genero: </label> <br>
+                        <div class="input-genero">  
+                            <input type="radio" name="genero" id="masculino"> 
+                            <label for="masculino">Masculino</label>
+                            <br>
+                            <input type="radio" name="genero" id="feminino">
+                            <label for="feminino">Feminino</label>
+                            <br>
+                            <input type="radio" name="genero" id="outro">
+                            <label for="outro">Outro</label>
+                            <br>
+                            <br>
+                        </div>
+                        
+                        <label for="marque">Qual a sua faixa de idade ? </label>
+                        <div class="input-caixa">
+
+                            <input type="checkbox">
+                            <label for="marque">10-20</label> <br>
+                            <input type="checkbox">
+                            <label for="marque">20-30</label> <br>
+                            <input type="checkbox">
+                            <label for="marque">30-40</label> <br>
+                        </div>
+                        <br>
+                        <div class="input-box">
+                            <label for="email">E-mail:</label> <br>
+                            <input type="email" name="email" class="input-user">
+                        </div>
+                        <br>
+                        <div class="input-box">
+                            <label for="senha">Senha: </label> <br>
+                            <input type="password" name="senha" class="input-user">
+                        </div>
+                        <input type="submit" id="botao">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

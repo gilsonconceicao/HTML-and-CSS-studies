@@ -1,0 +1,58 @@
+@charset "UTF-8"; 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to right, purple, blue);
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+fieldset {
+    border: 2px solid dodgerblue;
+}
+
+legend {
+    border: 3ps solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 10px;
+ 
+}
+
+.inputbox {
+    position: relative;
+}
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.label-input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s
+}
+.inputUser:focus ~ .label-input {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+

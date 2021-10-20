@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste responsividade de videos</title>
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+        header {
+            padding: 2px;
+            text-align: center;
+            background-color: rgb(36, 29, 29);
+            color: white;
+            margin: -8px -8px 0 -8px;
+        }
+        main {
+            background-color: white;
+            max-width: 1000px;
+            min-height: 500px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        div.video {
+            background-color: dodgerblue;
+            margin: 0 -20px 20px -20px;
+            padding: 20px;
+            position: relative;
+            padding-bottom: 58%;
+           
+        }
+        div.video > iframe {
+            position: absolute;
+            top: 7%;
+            left: 6%;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TESTANDO RESPONSIVIDADE DE VÍDEOS</h1>
+    </header>
+    <main>
+        <article>
+        <h2>Vídeo do gustavo Guanabara</h2>
+
+        <div class="video">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e1JjkZzs_s0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </div>
+        <hr>
+        <h2>Saiba mais sobre</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi debitis nisi fugiat illum in eos a nemo illo iusto itaque unde iure modi, dolor voluptatem, cum veniam, dicta impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate quia accusantium dignissimos, ad architecto aperiam, earum magnam a eos sit, autem repudiandae perspiciatis praesentium cumque recusandae voluptatibus quisquam repellendus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, repudiandae omnis. Repudiandae voluptas a, numquam quisquam possimus vel quae animi cumque corporis ut! Doloribus eos magni vero eligendi pariatur sequi? lore
+        </p>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 07</title>
+    <link rel="stylesheet" href="formulairo07.css">
+</head>
+<body>
+    <main>
+
+        <div class="box">
+            <form action="https://starbuzzcoffee.com/processorder.php" method="POST">
+                <fieldset>
+                    <legend>Preencha as suas informações</legend>
+                    <div class="input-box">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" class="input-user" required>
+                    </div> <br>
+                    <div class="input-box">
+                        <label for="sobrenome">Sobrenome: </label>
+                        <input type="text" name="sobrenome" class="input-user" required>
+                    </div> <br> 
+                    
+                    <label for="data-hora">Informe data e hora: </label>
+                    <input type="datetime-local" >
+                    <br>
+                    <br>
+                    <label for="opcoes" required >Qual linguagem você estuda? </label>
+                    <select name="options" id="opcoes" required> 
+                        <option value="escolha" aria-checked="false" >Escolha...</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="php">PHP</option>
+                        <option value="sql">SQL</option>
+                        <option value="python">python</option>
+                        <option value="c#">C#</option>
+                    </select>  
+                    <br>
+                    <br>       
+                    <div class="input-box">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" class="input-user" required>
+                    </div> <br>
+                    <div class="input-box">
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="senha" class="input-user" required>
+                    </div> <br>
+
+                    <input type="submit" id="botao" name="botao">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

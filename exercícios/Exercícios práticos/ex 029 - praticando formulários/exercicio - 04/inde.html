@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 04</title>
+    <link rel="stylesheet" href="formulario4.css">
+</head>
+<body>
+    <main>
+        <header id="cabecalho">
+            <div class="logo">
+                <h3>Formulario 04</h3>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="inde.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Formulário</a></li>
+                    <li class="ultimo-list"><a href="#">Entrar</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div class="box">
+                <form action="">
+                    <fieldset>
+                        <legend> Faça o seu cadastro </legend>
+                        <br>
+                        
+                        <!---nome // sobrenome // e-mail-->
+                        <div class="input-box">
+                            <label for="nome" class="label-input">Nome: </label> <br>
+                            <input type="text" name="nome" class="input-user" required>
+                           
+                        </div> <br> <br>
+                        <div class="input-box">
+                            <label for="sobrenome" class="label-input">Sobrenome: </label> <br>
+                            <input type="text" name="sobrenome" class="input-user" required>
+                         
+                        </div> <br> <br>
+                        <div class="input-box">
+                            <label for="email" class="label-input">E-mail </label> <br>
+                            <input type="email" name="email" class="input-user" required>
+                          
+                        </div> <br> <br>
+                        
+                        <!--data e hora-->
+                        <label for="data">data e hora: </label>
+                        <input type="datetime-local">
+                        <br> <br>
+                        <!---idade-->
+                        <label for="idade">Qual a sua idade?</label>
+                        <input type="number" min="14" max="90"> <br> <br>
+
+                        <!--qualidades da pessoa-->
+                        <label for="qualidade">Qual a sua qualidade</label>
+                        <select name="opcoes" id="opcoes">
+                            <option value="escolha">Escolha...</option>
+                            <option value="sinceridade">Sinceridade</option>
+                            <option value="prestativo">Prestativo</option>
+                            <option value="lider">Atitude lider</option>
+                            <option value="atencioso">Atenciosa(o)</option>
+                        </select> <br> <br>
+                        <!--informações pessoais-->
+                        <div class="input-box">
+                            <label for="endreco" class="label-input"> Endereço: </label> <br>
+                            <input type="text" name="endreco" class="input-user" required>
+                            
+                        </div> <br> <br>
+
+                        <div class="input-box">
+                            <label for="cep" class="label-input">CEP: </label> <br>
+                            <input type="text" name="cep" class="input-user" required>
+                       
+                        </div> <br> <br>
+
+                        <p class="botao">
+                            <a href="www.youtube.com"> Entrar </a>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+       
+    </main>
+</body>
+</html>

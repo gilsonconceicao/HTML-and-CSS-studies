@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 1</title>
+    <link rel="stylesheet" href="form1style.css">
+</head>
+<body>
+    <main>
+        <header>
+          
+                <h1>Formulário 1</h1>
+        
+        </header>
+
+        <section>
+            <form action="https://starbuzzcoffee.com/processorder.php" method="POST">
+                <div class="form-leaut">
+                    <p>
+                        Formulário do nada do nadão
+                    </p>
+                </div>
+                <div class="form-leaut">
+                    <lebel>Configure a data e o horário:</lebel>
+                        <input type="datetime-local">
+                
+                </div>
+                <div class="form-leaut">
+                        Nome: <input type="text" name="nome" required> <br>
+                        Endereço: <input type="text" name="Endereço" required> <br>
+                        CEP: <input type="text" name="CEP" required>
+                </div>
+
+                <div class="form-leaut">
+                    <lebel>Qual o seu carro preferido:</lebel>
+                        <select name="Opções" id="carro">
+                            <option value="Sem preferência">Sem preferência</option>
+                            <option value="Golf">Golf</option>
+                            <option value="Fox">Fox</option>
+                            <option value="Gol">Gol</option>
+                            <option value="Savero">Savero</option>
+                        </select>
+                </div>
+                <div class="form-leaut">
+                     <lebel>Carro ou moto ?</lebel>
+                        Carro: <input type="radio" name="carro-moto" value="Carro" checked> <br>
+                        Moto: <input type="radio" name="carro-moto" value="Moto">
+                </div>
+                <div class="form-leaut">
+                   <lebel>Quantos automovéis já teve:</lebel>
+                        <input type="number" min="0" max="20">
+                
+                </div>
+                
+                <div class="form-leaut">
+                    <lebel>comente aqui o que achou :</lebel> 
+                        <textarea name="Comentário" id="coment-area" cols="30" rows="10"></textarea>
+                
+                </div>
+
+                <div class="form-leaut">
+                    <input type="submit" value="Enviar agora">
+            </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

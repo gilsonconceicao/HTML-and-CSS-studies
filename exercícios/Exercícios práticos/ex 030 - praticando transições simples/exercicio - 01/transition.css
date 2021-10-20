@@ -1,0 +1,199 @@
+@charset "UTF-8"; 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #24211dd5;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: -8px -8px 0 -8px;
+    box-shadow: 0px 5px 27px dodgerblue;
+} 
+#menu > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+#menu > ul > li > a {
+    display: flex;
+    padding: 10px;
+    transition: .8s; 
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#menu > ul > li > a:hover {
+    background-color: tomato;
+    
+}
+
+.logo {
+    background-color: rgb(86, 13, 189);
+    width: 50px;
+    height: 50px;
+    border-radius: 150%;
+    transition: .8s;
+    box-shadow: 4px 4px 4px rgba(22, 21, 21, 0.659);
+}
+.logo:hover {
+    background-color: tomato;    
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* edição article */ 
+article {
+    color: white;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+}
+article > p {
+    text-align: justify;
+}
+.html-text > h1 {
+    text-align: center;
+    font-size: 3em;
+}
+article > p::first-letter {
+    font-size: 4em;
+}
+article > p::first-line {
+    font-style: italic;
+    color: rgb(220, 67, 21);
+    font-weight: bold;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* - fileira de transições */ 
+.div-box {
+    
+    background-color: tomato;
+    width: 70px;
+    height: 70px;
+    transition: .8s;
+    box-shadow: 5px 5px 6px rgba(255, 255, 255, 0.364);
+    margin: 20px auto 20px auto;
+
+}
+.div-box:hover {
+    background-color: rgb(25, 105, 179);
+    opacity: 0.5;
+    transform: rotate(200deg);
+    -webkit-transform: rotate(200deg);
+    -o-transform: rotate(200deg); 
+    -moz-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+}
+/* - transições feita em sentido lateral  */ 
+
+.rotativo-p {
+    background-color: dodgerblue;
+    color: black;
+    display: flex;
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    transition: .8s;
+    border-radius: 80px;
+}
+.rotativo-p:hover {
+    background-color: purple;
+    color: white;
+    width: 300px;
+    height: 200px;
+}
+
+/* trasições em circulo - do maior para o menor */ 
+
+.box-p-b {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+.box-blue {
+    background-color: dodgerblue;
+    width: 200px; 
+    height: 200px;
+    transition: .8s;
+    border-radius: 30px;
+    margin: 10px;
+}
+.box-blue:hover {
+    background-color: purple;
+    border-radius: 150%;
+    width: 100px;
+    height: 100px;
+}
+.box-purple{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    transition: .8s;   
+    margin: 10px; 
+}
+.box-purple:hover {
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 150%;
+}
+
+/* trasições em circulo - menor para o maior */ 
+.box-t-b {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 200px auto;
+   
+}
+.box-tomato {
+    background-color: tomato;
+    width: 100px;
+    height: 100px; 
+    border-radius: 20px;
+    transition: .8s;
+}
+.box-azul {
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px; 
+    border-radius: 20px;
+    transition: .8s;
+ 
+}
+.box-tomato:hover {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+}
+.box-azul:hover {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    border-radius: 150%;
+}
+
+
+@media (max-width:1000px) {
+    .rotativo-p {
+        width: 300px;
+    }
+}

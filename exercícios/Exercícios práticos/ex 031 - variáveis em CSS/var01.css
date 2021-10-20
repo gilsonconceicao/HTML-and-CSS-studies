@@ -1,0 +1,167 @@
+@charset "UTF-8"; 
+
+:root {
+    --cor-1: #1c67d8; 
+    --cor-2: #f7f720; 
+    --cor-3: #9d039d; 
+    --cor-4: #0fce95; 
+    --cor-body: #359175;
+
+    /* cores auternativas 02 */ 
+    --cor-5: #ff0000; 
+    --cor-6: #da6a7d; 
+    --cor-7: #ff8400; 
+    --cor-8: #000000; 
+    /* fontes da pagima simples */
+    --font-padrao: Arial, verdana, sans-serif; 
+    --font-destaque: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+header {
+    background-color: var(--cor-4);
+    padding: 2px;
+    margin: -8px -8px 0 -8px;
+}
+header > h1 {
+    color: var(--font-destaque);
+    color: white;
+    text-align: center;
+}
+
+/* corpo da pagina */ 
+body {
+    background-color: var(--cor-body);
+    font-family: var(--font-padrao);
+}
+main {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 4px 4px 4px #1f1a1a6d;
+    padding: 10px; 
+}
+article > h1 {
+    font-family: var(--font-destaque);
+    font-size: 2.3em;
+    margin: auto;
+
+}
+
+
+/* estilizações das caixas e suas transiç~ies */ 
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 2px;
+}
+.box div {
+    margin: 10px;
+}
+.box > h3 {
+    font-family: var(--font-destaque);
+}
+.caixa-blue {
+    background-color: var(--cor-1);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-blue:hover {
+    transform: rotate(45deg);
+}
+.caixa-yellow {
+    background-color: var(--cor-2);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-yellow:hover {
+    width: 300px;
+
+}
+
+.caixa-purple {
+    background-color: var(--cor-3);
+    width: 100px;
+    height: 100px;
+    border-radius: 150px;
+    transition: .9s;
+}
+.caixa-purple:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.caixa-green {
+    background-color: var(--cor-4);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-green:hover {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+/* modelos de caixas com cores e var diferentes */ 
+.caixa-red {
+    background-color: var(--cor-5);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-red:hover {
+    background-color: var(--cor-4);
+    border-radius: 50% 0 ;
+}
+
+.caixa-pink {
+    background-color: var(--cor-6);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-pink:hover {
+    background-color: var(--cor-8);
+    border-radius: 0 50% ;
+}
+.caixa-orange {
+    background-color: var(--cor-7);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-orange:hover {
+    background-color: blueviolet;
+    transform: rotate(56deg);
+    -webkit-transform: rotate(56deg);
+}
+.caixa-black {
+    background-color: var(--cor-8);
+    width: 100px;
+    height: 100px;
+    transition: .9s;
+}
+.caixa-black:hover {
+    background-color: blueviolet;
+    width: 500px;
+    height: 100px;
+}
+
+
+@media (max-width: 750px) {
+    .box {
+        display: block;
+        grid-template-columns: none;
+        padding: 10px;
+        margin: 2px;
+    }
+    .box div {
+        margin: 10px;
+    }
+    main {
+        max-width: 100%;
+        margin: 0  -8px;
+    }
+}

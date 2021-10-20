@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site &reg; </title>
+    <link rel="stylesheet" href="pag-login.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <h2>Studion</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Saiba mais </a></li>
+                    <li><a href="conteudo-index.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+                <div class="box">
+
+                    <form action="#">
+                        <fieldset>
+                            <span class="titulo-form">
+                                <h2>Login</h2>
+                            </span>
+                            
+                            <div class="input-box">
+                                <label for="nome">Nome de usuário: </label>  <br>
+                                <input type="text" name="nome" required id="input-user">
+                            </div>
+                            <div class="input-box">
+                                <label for="datetime">Data e hora:</label>
+                                <input type="datetime-local">
+                            </div>
+                            <div class="input-box">
+                                <label for="linguagens">Qual a sua linguagem? </label>
+                                <select name="linguagens" id="options">
+                                    <option value="JavaScript">JavaScript</option>
+                                    <option value="java">JAVA</option>
+                                    <option value="c#">C#</option>
+                                </select>
+                            </div>
+                            <div class="input-box">
+                                <label for="email"> E-mail: </label>  <br>
+                                <input type="email" name="email" required id="input-user">
+                            </div>
+
+                            <div class="input-box">
+                                <label for="senha">Senha: </label>  <br>
+                                <input type="password" name="senha" required id="input-user">
+                            </div>
+
+                            <input type="submit" name="botao" id="botao">
+                        </fieldset>
+                    </form>
+                </div>
+        </section>
+    </main>
+</body>
+</html>
